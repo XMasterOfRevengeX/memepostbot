@@ -1,0 +1,23 @@
+{
+  "name": "memepostbot",
+  "version": "1.0.0",
+  "description": "This is a discord bot that mirrors posts from a twitter account.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alphuite/memepostbot.git"
+  },
+  "author": "alphuite",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alphuite/memepostbot/issues"
+  },
+  "homepage": "https://github.com/alphuite/memepostbot#readme",
+  "dependencies": {
+    "discord.io": "^2.3.0",
+    "twitter": "^1.7.0"
+  }
+}
