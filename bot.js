@@ -10,20 +10,20 @@ var twitterBot = new twitter({
     access_token_secret: keys.twitterAccessSecret
 });
 
-var twitterStream = twitterBot.stream('statuses/filter', {follow: 3945972795});
+var twitterStream = twitterBot.stream('statuses/filter', {follow: 819929557000134656});
 twitterStream.on('data', function(data){
     //console.log(data);
-    if (data.user.id == 3945972795){
+    if (data.user.id == 819929557000134656){
         if (data.entities !== undefined && data.entities.media !== undefined){
             console.log(`@${data.user.screen_name} wrote: "${data.entities.media[0].media_url}"`);
             discordBot.sendMessage({
-                to: '160863919492169729',
+                to: '819929557000134656',
                 message: `@${data.user.screen_name} ${data.entities.media[0].media_url}`
             });
         }else{
             console.log(`@${data.user.screen_name} wrote: "${data.text}"`);
             discordBot.sendMessage({
-                to: '160863919492169729',
+                to: '819929557000134656',
                 message: `@${data.user.screen_name} "${data.text}"`
             });
         }
