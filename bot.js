@@ -1,6 +1,6 @@
 // memebot
 var twitter = require('twitter');
-var keys = require('./configs/keys.js');
+var keys = require('./configs/keys.js'); 
 var discord = require('discord.io');
 
 var twitterBot = new twitter({
