@@ -17,13 +17,13 @@ twitterStream.on('data', function(data){
         if (data.entities !== undefined && data.entities.media !== undefined){
             console.log(`@${data.user.screen_name} wrote: "${data.entities.media[0].media_url}"`);
             discordBot.sendMessage({
-                to: '819929557000134656',
+                to: '268847368319795201',
                 message: `@${data.user.screen_name} ${data.entities.media[0].media_url}`
             });
         }else{
             console.log(`@${data.user.screen_name} wrote: "${data.text}"`);
             discordBot.sendMessage({
-                to: '819929557000134656',
+                to: '268847368319795201',
                 message: `@${data.user.screen_name} "${data.text}"`
             });
         }
